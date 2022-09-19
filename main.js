@@ -29,7 +29,6 @@ function start() {
     let action = input();
     if (action === "1") {
         convertCurrency();
-        start();
     } else if (action === "2"){
         end();
     } else {
@@ -69,6 +68,7 @@ function convertCurrency() {
     //console.log(result);
 
     console.log(`Result: ${amount} ${from} equals ${result.toFixed(4)} ${to}`);
+    start();
 }
 
 function end() {
